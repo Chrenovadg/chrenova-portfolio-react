@@ -50,8 +50,8 @@ export const Test = () => {
 
   return (
     <>
-      <section className="text-recoleta section__test flex flex-col items-center justify-center h-[30vh] sm:h-[35vh] md:h-[80vh] pt-8 pb-0 sm:py-32">
-        <p className="reveal-type text-recoleta text-center text-2x1 md:text-3xl lg:text-4xl xl:text-5xl mx-0 sm:mx-40 px-5 sm:px-32 tracking-normal" data-bg-color="#cfcee1" data-fg-color="#4f46e5">
+      <section className="text-recoleta section__test flex flex-col items-center justify-center h-[70vh] sm:h-[70vh] md:h-[70vh] lg:h-[100vh] pb-0 px-8 sm:pb-0 sm:px-2 ">
+        <p className="reveal-type text-recoleta text-center text-2x1 md:text-3xl lg:text-4xl xl:text-5xl mx-0 sm:mx-2 px-5 sm:px-32 tracking-normal" data-bg-color="#cfcee1" data-fg-color="#4f46e5">
         Mi pasión se enfoca en crear sitios con una excelente usabilidad, contenido <br /> para RR.SS, ilustraciones e interfaces <br /> que te dejarían así 🢡 ☺ 🢠.
         </p>
       </section>

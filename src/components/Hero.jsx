@@ -1,16 +1,12 @@
 import { TypeAnimation } from "react-type-animation";
-import { NavBar } from "./NavBar";
 
 import "flowbite";
 
 export default function Hero() {
-
-  
-
   return (
+      
     <div className="hero__container font-recoleta">
       {/* Navbar */}
-      <NavBar />
 
       <div className="relative isolate px-6 pt-14 lg:px-8 flex">
         <div

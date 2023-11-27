@@ -22,10 +22,6 @@ body{
     bottom: 17.5rem;
 }
 
-/* .hero__container{
-    background-color: #efefef !important;
-}
- */
 
 .icon{
     height: 100px;
@@ -44,7 +40,6 @@ body{
 
 .h1__hero{
     color: #462dff;
-    /* background-color: #532dff8c; */
     background: radial-gradient(circle, rgba(255, 230, 241, 0.407) 50%, #532dff8c 100%) !important;
     transform: rotate(2deg);
     border-radius: 4rem 0rem 5rem 0rem;
@@ -108,5 +103,15 @@ body{
 
 .section__test p {
     font-size: clamp(2rem, 4vw, 8rem);
+}
+
+.contact{
+    z-index: 98 !important;
+
+}
+
+.footer{
+    position: sticky;
+    z-index: 99 !important;
 }
 

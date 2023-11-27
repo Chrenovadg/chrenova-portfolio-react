@@ -12,7 +12,7 @@ import illustratorIcon from '../assets/img/illustrator.svg'
 export const TechStack = () => {
     return (
         <>
-        <div className="mx-auto max-w-2xl sm:max-w-4xl flex justify-center h-screen-96 items-center">
+        <div className="mx-auto max-w-2xl sm:max-w-4xl flex justify-center h-screen-96 items-center lg:pb-0 lg:pb-32">
 
             <div className="mb-6 grid grid-cols-3 sm:grid-cols-9 md:grid-cols-9 xl:grid-cols-9 sm:mx-2">
                 <div className="p-4">
@@ -36,7 +36,7 @@ export const TechStack = () => {
                         src={bootstrapIcon}
                         className=".icon__tech h-12 w-auto mx-auto"
                         loading="lazy"
-                        alt="React Logo"
+                        alt="Bootstrap Logo"
                     />
                 </div>
                 <div className="p-4">
@@ -44,7 +44,7 @@ export const TechStack = () => {
                         src={css3Icon}
                         className=".icon__tech h-12 w-auto mx-auto"
                         loading="lazy"
-                        alt="React Logo"
+                        alt="Css3 Logo"
                     />
                 </div>
                 <div className="p-4">
@@ -52,7 +52,7 @@ export const TechStack = () => {
                         src={html5Icon}
                         className=".icon__tech h-12 w-auto mx-auto"
                         loading="lazy"
-                        alt="React Logo"
+                        alt="Html5 Logo"
                     />
                 </div>
                 <div className="p-4">
@@ -76,7 +76,7 @@ export const TechStack = () => {
                         src={photoshopIcon}
                         className=".icon__tech h-12 w-auto mx-auto"
                         loading="lazy"
-                        alt="React Logo"
+                        alt="Photoshop Logo"
                     />
                 </div>
                 <div className="p-4">
@@ -84,7 +84,7 @@ export const TechStack = () => {
                         src={illustratorIcon}
                         className=".icon__tech h-12 w-auto mx-auto"
                         loading="lazy"
-                        alt="React Logo"
+                        alt="Illustrator Logo"
                     />
                 </div>
 

@@ -1,0 +1,12 @@
+export * from './CardServices';
+export * from './Cards/DesignCard';
+export * from './Cards/FrontCard';
+export * from './Cards/UiCard';
+export { default as Contact } from './Contact';
+export * from './Experience';
+export * from './Footer';
+export { default as Hero } from './Hero';
+export * from './NavBar';
+export * from './Services';
+export * from './TechStack';
+export * from './Test';
