@@ -7,7 +7,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 
 
 const navigation = [
-  { name: 'Portfolio', href: '#' },
+  { name: 'Portfolio', href: 'https://behance.net/chrenova' },
   { name: 'Contacto', href: '#contact-section' },
 ]
 
