@@ -15,7 +15,7 @@ export const FrontCard = () => {
           </div>
           <div className="p-5">
               <p className="mb-3 font-normal text-gray-700">
-                Comunicación gráfica llamativa que cautiva a tu audiencia en un mundo visualmente saturado.
+              Desarrollo web interactivo, dinámico y responsive adaptado a tus necesidades.
               </p>
               <a href="#" className="card__btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg ">
                     Conoce más

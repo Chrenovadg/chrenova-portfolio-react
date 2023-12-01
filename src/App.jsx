@@ -8,6 +8,7 @@ import { Services } from './components/Services'
 import { TechStack } from './components/TechStack'
 import { Test } from './components/Test'
 import './App.css'
+import { Gallery } from './components/Gallery';
 
 function App() {
     if ('scrollRestoration' in window.history) {
@@ -25,10 +26,10 @@ function App() {
           <Route path='/' element={<Services />} />
         </Routes>
       </Router>
-
       <TechStack />
       <Test />
       <Services />
+      <Gallery/>
       <Contact />
       <Footer />
     </>

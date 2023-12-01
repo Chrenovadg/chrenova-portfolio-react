@@ -1,13 +1,41 @@
 import { useState } from 'react'
-import React from 'react'
 import { Switch } from '@headlessui/react'
+import Swal from 'sweetalert2'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
+
 export default function Contact() {
+  
   const [agreed, setAgreed] = useState(false)
+  
+  const [inputFields, setInputFields] = useState({
+    nombre: "",
+    apellido: "",
+  })
+
+  const [errors, setErrors] = useState({})
+
+  const [submitting, setSubmitting] = useState({})
+  
+
+  const submitAlert = (event) => {
+    event.preventDefault()
+
+    var nameForm = document.querySelector('.nameForm').value
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: `¡ Gracias ${nameForm}! Pronto estaremos en contacto. ☺️`,
+      showConfirmButton: false,
+      timer: 1500
+    });
+  }
+
 
   return (
     <div className="relative isolate px-6 pt-10 pb-24 sm:py-18 sm:pt-40 lg:px-8 mt-5 " id='contact-section'>
@@ -27,15 +55,16 @@ export default function Contact() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              Nombre
+              Nombre:
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="text"
                 name="first-name"
                 id="first-name"
                 autoComplete="given-name"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="nameForm block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -49,7 +78,7 @@ export default function Contact() {
                 name="last-name"
                 id="last-name"
                 autoComplete="family-name"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="surnameForm block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -133,7 +162,7 @@ export default function Contact() {
                   'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                 )}
               >
-                <span className="sr-only">Agree to policies</span>
+                <span className="sr-only"></span>
                 <span
                   aria-hidden="true"
                   className={classNames(
@@ -154,8 +183,11 @@ export default function Contact() {
         </div>
         <div className="mt-10">
           <button
+            onClick={submitAlert}
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold 
+            text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 
+            focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Enviar
           </button>
