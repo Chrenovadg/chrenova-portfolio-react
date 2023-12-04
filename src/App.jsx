@@ -8,7 +8,7 @@ import { Services } from './components/Services'
 import { TechStack } from './components/TechStack'
 import { Test } from './components/Test'
 import './App.css'
-import { Gallery } from './components/Gallery';
+/* import { Gallery } from './components/Gallery'; */
 
 function App() {
     if ('scrollRestoration' in window.history) {
@@ -29,7 +29,7 @@ function App() {
       <TechStack />
       <Test />
       <Services />
-      <Gallery/>
+      {/* <Gallery/> */}
       <Contact />
       <Footer />
     </>

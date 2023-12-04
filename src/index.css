@@ -151,8 +151,18 @@ body::-webkit-scrollbar {
 }
 
 .gallery__header{
-    /* justify-content: center; */
-    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+
+    height: 40vh;
+}
+.gallery__footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+
+    height: 82.6vh;
 }
 
 .container{
@@ -168,22 +178,23 @@ body::-webkit-scrollbar {
 
 .img{
     width: 100%;
-    height: 700px;
+    height: 800px;
     position: relative;
     background-size: cover;
-    z-index: -1;
-
+    z-index: 10;
+    filter: grayscale(100%); /* Current draft standard */
 }
 
-.img:nth-of-type(1){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(2){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(3){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(4){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(5){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(6){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(7){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(8){  background-image: url('../img/1.jpg'); }
-.img:nth-of-type(9){  background-image: url('../img/1.jpg'); }
+
+.img:nth-of-type(1){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(2){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(3){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(4){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(5){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(6){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(7){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(8){  background-image: url('./assets/img/gallery/1.webp'); }
+.img:nth-of-type(9){  background-image: url('./assets/img/gallery/1.webp'); }
 
 .img::before{
     content: '';
@@ -193,7 +204,6 @@ body::-webkit-scrollbar {
     z-index: 4;
     top: 0;
     left: 0;
-    /* border-right: 1px solid black; */
 }
 
 .line{
@@ -203,3 +213,11 @@ body::-webkit-scrollbar {
 .color{
     background-color: chartreuse;
 }
+/* PARA LAS IMAGENES RESPONSIVE:
+    1. cambiar el height de las .img 407px
+    2. eliminar el section__header
+    3. section gallery = display: grid;
+                         grid-template-columns: repeat(2, 1fr);
+                         height: 100vh;
+                         margin: 0 auto;
+*/

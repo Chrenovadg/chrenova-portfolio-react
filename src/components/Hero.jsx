@@ -60,7 +60,7 @@ export default function Hero() {
 
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="https://drive.google.com/file/d/1K1FWOr5xPTXdJO6TmRsdtlzaFymlBOLg/view"
+                href="https://drive.google.com/file/d/1pWhgtqQBWf9q4o7oaQsKsMldf1M-O3oo/view"
                 className="card__btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
               >
                 Descargar CV Front Dev
@@ -90,7 +90,7 @@ export default function Hero() {
               </div>
 
               <a
-                href="https://drive.google.com/file/d/1JWc2bBzb6othOBrPPanoBFtto34m6q2g/view?usp=sharing"
+                href="https://drive.google.com/file/d/1fzts-RYYGdkhSAD-232lfm7yGdKT5Iez/view"
                 className="card__btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
               >
                 Descargar CV Design
